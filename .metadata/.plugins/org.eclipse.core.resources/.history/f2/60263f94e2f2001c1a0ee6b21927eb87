@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      
+<h:head>
+	<title>Counter Two - Application Scope Test</title>
+</h:head>
+
+<h:body>
+	<h3>Counter Two - Application Scope Test</h3>
+	
+	<hr/>
+	
+	<br/>
+	
+	Counter value = #{counterTwo.val}
+	<h:selectOneMenu value="#{counterTwo.}">
+	</h:selectOneMenu>
+	
+	<h:form>
+		<h:commandButton value="Increment" action="#{counterTwo.increment()}"></h:commandButton>
+	</h:form>
+</h:body>
+
+</html>

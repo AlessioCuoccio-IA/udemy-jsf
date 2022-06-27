@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+
+<h:head>
+	<title>Student Table Demo</title>
+</h:head>
+
+<h:body>
+	<h3>Student Table Demo</h3>
+	
+	<hr/>
+	
+	<h:dataTable value="#{studentDataUtil.students}" var="tempStudent" border="1">
+		<h:column>
+			<!-- header -->
+			<f:facet name="header">First Name</f:facet>
+			
+			<!-- row's value -->
+			#{tempStudent.firstName}
+		</h:column>
+		
+		<h:column>
+			<!-- header -->
+			<f:facet name="header">Last Name</f:facet>
+			
+			<!-- row's value -->
+			#{tempStudent.lastName}
+		</h:column>
+	</h:dataTable>
+</h:body>
+</html>

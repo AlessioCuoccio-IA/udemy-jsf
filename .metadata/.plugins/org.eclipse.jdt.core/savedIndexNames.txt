@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\acuoccio\udemy-jsf\.metadata\.plugins\org.eclipse.jdt.core
+2434300505.index
+985413812.index
+1354570887.index
+2069154623.index
+2859841772.index

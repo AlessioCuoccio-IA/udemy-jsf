@@ -1,0 +1,20 @@
+package com.luv2code.jsf.beandemo;
+
+import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+@ApplicationScoped
+public class CounterTwo {
+	
+	private Integer val = 0;
+	
+	public CounterTwo() {}
+	
+	public String increment() {
+		val++;
+		
+		return "counter_two";
+	}
+
+}
